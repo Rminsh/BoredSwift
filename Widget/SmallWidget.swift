@@ -12,28 +12,23 @@ import Intents
 struct SmallWidget : View {
     var entry: Provider.Entry
     
-    @AppStorage("activityTitle") var activityTitle: String = ""
-    @AppStorage("activityAccessibility") var activityAccessibility: Double = 0.0
-    @AppStorage("activityParticipants") var activityParticipants: Int = 0
-    @AppStorage("activityType") var activityType: String = ""
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(activityTitle)
+            Text(entry.activity.activity)
                 .font(.subheadline)
                 .fontWeight(.medium)
             
             ItemViewSmall(
                 icon: "circle.hexagongrid.fill",
                 header: "Type",
-                title: activityType.capitalizingFirstLetter()
+                title: entry.activity.type.capitalizingFirstLetter()
             )
             
             HStack {
                 ItemViewSmall(
                     icon: "figure.wave.circle.fill",
                     header: "Accessibility",
-                    title: "\(activityAccessibility * 100)%"
+                    title: "\(entry.activity.accessibility * 100)%"
                 )
                 
                 Spacer()
@@ -41,7 +36,7 @@ struct SmallWidget : View {
                 ItemViewSmall(
                     icon: "person.2.circle.fill",
                     header: "Participants",
-                    title: "\(activityParticipants)"
+                    title: "\(entry.activity.participants)"
                 )
             }
         }
@@ -50,16 +45,15 @@ struct SmallWidget : View {
 }
 
 struct SmallWidget_Previews: PreviewProvider {
+    
+    static var dataModel = ActivityDataModel()
+    
     static var previews: some View {
         SmallWidget(
-            entry: ActivityEntry(
-                date: Date(),
+            entry: ActivityData(
+                activity: dataModel.testData(),
                 configuration: ConfigurationIntent()
-            ),
-            activityTitle: "Resolve a problem you've been putting off",
-            activityAccessibility: 0,
-            activityParticipants: 1,
-            activityType: "busywork"
+            )
         )
         .previewContext(WidgetPreviewContext(family: .systemSmall))
     }

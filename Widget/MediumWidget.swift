@@ -14,34 +14,24 @@ import Intents
 struct MediumWidget : View {
     var entry: Provider.Entry
     
-    @AppStorage("activityTitle") var activityTitle: String = ""
-    @AppStorage("activityAccessibility") var activityAccessibility: Double = 0.0
-    @AppStorage("activityParticipants") var activityParticipants: Int = 0
-    @AppStorage("activityType") var activityType: String = ""
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Spacer()
-                .frame(minHeight: 0, maxHeight: .infinity)
             
             Text("Let's")
                 .font(.title2)
                 .fontWeight(.light)
             
-            Text(activityTitle)
+            Text(entry.activity.activity)
                 .font(.title3)
                 .fontWeight(.medium)
                 .padding(.horizontal)
-            
-            Spacer()
-                .frame(minHeight: 0, maxHeight: .infinity)
             
             HStack {
                 
                 ItemViewSmall(
                     icon: "circle.hexagongrid.fill",
                     header: "Type",
-                    title: activityType.capitalizingFirstLetter()
+                    title: entry.activity.type.capitalizingFirstLetter()
                 )
                 
                 Spacer()
@@ -49,7 +39,7 @@ struct MediumWidget : View {
                 ItemViewSmall(
                     icon: "figure.wave.circle.fill",
                     header: "Accessibility",
-                    title: "\(activityAccessibility * 100)%"
+                    title: "\(entry.activity.accessibility * 100)%"
                 )
                 
                 Spacer()
@@ -57,7 +47,7 @@ struct MediumWidget : View {
                 ItemViewSmall(
                     icon: "person.2.circle.fill",
                     header: "Participants",
-                    title: "\(activityParticipants)"
+                    title: "\(entry.activity.participants)"
                 )
                 
                 Spacer()
@@ -68,16 +58,15 @@ struct MediumWidget : View {
 }
 
 struct MediumWidget_Previews: PreviewProvider {
+    
+    static var dataModel = ActivityDataModel()
+    
     static var previews: some View {
         MediumWidget(
-            entry: ActivityEntry(
-                date: Date(),
+            entry: ActivityData(
+                activity: dataModel.testData(),
                 configuration: ConfigurationIntent()
-            ),
-            activityTitle: "Resolve a problem you've been putting off",
-            activityAccessibility: 0,
-            activityParticipants: 1,
-            activityType: "busywork"
+            )
         )
         .previewContext(WidgetPreviewContext(family: .systemMedium))
     }

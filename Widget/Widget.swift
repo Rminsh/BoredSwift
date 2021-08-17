@@ -14,20 +14,27 @@ struct Provider: IntentTimelineProvider {
     @StateObject private var dataModel = ActivityDataModel()
     
     // MARK: - Placeholder
-    func placeholder(in context: Context) -> ActivityEntry {
+    func placeholder(in context: Context) -> ActivityData {
         dataModel.fetchData()
-        return ActivityEntry(date: Date(), configuration: ConfigurationIntent())
+        return ActivityData(
+            activity: dataModel.testData(),
+            configuration: ConfigurationIntent()
+        )
     }
     
     // MARK: - Snapshot
     func getSnapshot(
         for configuration: ConfigurationIntent,
         in context: Context,
-        completion: @escaping (ActivityEntry) -> ()
+        completion: @escaping (ActivityData) -> ()
     ) {
-        dataModel.fetchData()
-        let entry = ActivityEntry(date: Date(), configuration: configuration)
-        completion(entry)
+        dataModel.fetch { activity in
+            let entry = ActivityData(
+                activity: activity,
+                configuration: configuration
+            )
+            completion(entry)
+        }
     }
     
     // MARK: - Timeline
@@ -36,24 +43,18 @@ struct Provider: IntentTimelineProvider {
         in context: Context,
         completion: @escaping (Timeline<Entry>) -> ()
     ) {
-        let currentDate = Date()
-        let nextDate = Calendar.current.date(byAdding: .minute, value: 45, to: currentDate)!
+        var entries: [ActivityData] = [] /// List of entries
         
-        let entry = ActivityEntry(date: Date(), configuration: configuration)
+        /// Widget will refresh every `1 hour`
+        let refresh = Calendar.current.date(byAdding: .hour, value: 1, to: Date()) ?? Date()
         
-        dataModel.fetchData()
-
-        let timeline = Timeline(
-            entries: [entry],
-            policy: .after(nextDate)
-        )
-        completion(timeline)
+        /// fetching and updating data
+        dataModel.fetch { activity in
+            entries.append(ActivityData(activity: activity, configuration: configuration))
+            let timeline = Timeline(entries: entries, policy: .after(refresh))
+            completion(timeline)
+        }
     }
-}
-
-struct ActivityEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
 }
 
 struct BoredWidgetEntryView : View {
@@ -92,19 +93,22 @@ struct BoredWidget: Widget {
 }
 
 struct Widget_Previews: PreviewProvider {
+    
+    static var dataModel = ActivityDataModel()
+    
     static var previews: some View {
         Group {
             SmallWidget(
-                entry: ActivityEntry(
-                    date: Date(),
+                entry: ActivityData(
+                    activity: dataModel.testData(),
                     configuration: ConfigurationIntent()
                 )
             )
             .previewContext(WidgetPreviewContext(family: .systemSmall))
             
             MediumWidget(
-                entry: ActivityEntry(
-                    date: Date(),
+                entry: ActivityData(
+                    activity: dataModel.testData(),
                     configuration: ConfigurationIntent()
                 )
             )

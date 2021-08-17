@@ -26,6 +26,7 @@
 		C612DC4426C2BF580078BDE1 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
 		C612DC4626C2CFC90078BDE1 /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */; };
 		C648678226CB9D5F004F2C80 /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648678026CB9D5F004F2C80 /* MediumWidget.swift */; };
+		C648678726CC32F2004F2C80 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648678626CC32F2004F2C80 /* ActivityData.swift */; };
 		C64E180326BE76550043107C /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
 		C64E180426BE76550043107C /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
 		C64E180726BE76550043107C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64E17F226BE76550043107C /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		C612DC3126C2BAF00078BDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidget.swift; sourceTree = "<group>"; };
 		C648678026CB9D5F004F2C80 /* MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidget.swift; sourceTree = "<group>"; };
+		C648678626CC32F2004F2C80 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		C64E17F026BE76540043107C /* BoredApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApp.swift; sourceTree = "<group>"; };
 		C64E17F226BE76550043107C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C64E17F726BE76550043107C /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 		C612DC2B26C2BAEE0078BDE1 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				C648678526CC32D5004F2C80 /* Model */,
 				C648678026CB9D5F004F2C80 /* MediumWidget.swift */,
 				C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */,
 				C612DC2C26C2BAEE0078BDE1 /* Widget.swift */,
@@ -158,6 +161,14 @@
 				C612DC3126C2BAF00078BDE1 /* Info.plist */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		C648678526CC32D5004F2C80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C648678626CC32F2004F2C80 /* ActivityData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C64E17EA26BE76540043107C = {
@@ -413,6 +424,7 @@
 				C612DC4226C2BD540078BDE1 /* NetworkRequest.swift in Sources */,
 				C612DC4326C2BF470078BDE1 /* ItemView.swift in Sources */,
 				C612DC4126C2BD540078BDE1 /* NetworkingError.swift in Sources */,
+				C648678726CC32F2004F2C80 /* ActivityData.swift in Sources */,
 				C612DC3B26C2BD4C0078BDE1 /* ActivityDataModel.swift in Sources */,
 				C612DC4426C2BF580078BDE1 /* Extensions+String.swift in Sources */,
 				C612DC3D26C2BD510078BDE1 /* ActivityResource.swift in Sources */,
@@ -478,7 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -502,7 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -639,7 +651,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Bored.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_PREVIEWS = YES;
@@ -663,7 +675,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Bored.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_PREVIEWS = YES;

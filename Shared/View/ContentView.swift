@@ -8,65 +8,59 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject private var dataModel = ActivityDataModel()
+    @EnvironmentObject var dataModel: ActivityDataModel
     
     var body: some View {
-        ZStack(alignment: .center) {
-            VStack {
-                // Header content
-                #if os(macOS)
-                header
-                    .frame(minWidth: 250)
-                    .padding(.top, 100)
-                    .padding(.bottom, 50)
-                #else
-                Spacer()
-                
-                header
-                
-                Spacer()
-                    .frame(maxHeight: 50)
-                #endif
-                
-                // Activity content
-                #if os(macOS)
-                content
-                    .frame(maxWidth: .infinity)
-                
-                if dataModel.isLoading {
-                    ProgressView()
-                }
-                #else
-                content
-                
-                if dataModel.isLoading && dataModel.activity == nil {
-                    ProgressView()
-                }
-                
-                Spacer()
-                #endif
-                
-                // Get another activity
-                if !dataModel.isLoading && !dataModel.hasError {
-                    ActionView(
-                        title: "Not satisfied?",
-                        subtitle: "Try another one",
-                        action: { dataModel.fetchData() }
-                    )
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 80)
-                } else if dataModel.isLoading && dataModel.activity != nil {
-                    ProgressView()
-                        .frame(height: 80)
-                }
+        VStack {
+            // Header content
+            #if os(macOS)
+            header
+                .frame(minWidth: 250)
+                .padding(.top, 100)
+                .padding(.bottom, 50)
+            #else
+            Spacer()
+            
+            header
+            
+            Spacer()
+                .frame(maxHeight: 50)
+            #endif
+            
+            // Activity content
+            #if os(macOS)
+            content
+                .frame(maxWidth: .infinity)
+            
+            if dataModel.isLoading {
+                ProgressView()
             }
-            .frame(maxWidth: .infinity)
-            .padding()
+            #else
+            content
             
+            if dataModel.isLoading && dataModel.activity == nil {
+                ProgressView()
+            }
             
-            // Empty state for network error
-            if dataModel.hasError && dataModel.activity != nil {
+            Spacer()
+            #endif
+            
+            // Get another activity
+            if !dataModel.isLoading && !dataModel.hasError {
+                ActionView(
+                    title: "Not satisfied?",
+                    subtitle: "Try another one",
+                    action: { dataModel.fetchData() }
+                )
+                .frame(maxWidth: .infinity)
+                .frame(height: 80)
+            } else if dataModel.isLoading && dataModel.activity != nil {
+                ProgressView()
+                    .frame(height: 80)
+            }
+            
+            // Empty state for network error (if activity is nil)
+            if !dataModel.isLoading && dataModel.hasError && dataModel.activity == nil {
                 ActionView(
                     title: dataModel.errorTitle,
                     subtitle: "Try again",
@@ -74,6 +68,8 @@ struct ContentView: View {
                 )
             }
         }
+        .frame(maxWidth: .infinity)
+        .padding()
         .onAppear { dataModel.fetchData() }
     }
     

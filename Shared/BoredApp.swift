@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BoredApp: App {
+    @StateObject private var dataModel = ActivityDataModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(dataModel)
         }
     }
 }

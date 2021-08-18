@@ -1,5 +1,5 @@
 //
-//  ActivityDataModel.swift
+//  ActivityStore.swift
 //  Bored
 //
 //  Created by armin on 8/7/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-class ActivityDataModel: ObservableObject {
+class ActivityStore: ObservableObject {
     
     @AppStorage("activityTitle") private var activityTitle: String = ""
     @AppStorage("activityAccessibility") private var activityAccessibility: Double = 0.0

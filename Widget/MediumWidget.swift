@@ -59,7 +59,7 @@ struct MediumWidget : View {
 
 struct MediumWidget_Previews: PreviewProvider {
     
-    static var dataModel = ActivityDataModel()
+    static var dataModel = ActivityStore()
     
     static var previews: some View {
         MediumWidget(

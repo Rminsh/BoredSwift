@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var dataModel: ActivityDataModel
+    @EnvironmentObject var dataModel: ActivityStore
     
     var body: some View {
         VStack {

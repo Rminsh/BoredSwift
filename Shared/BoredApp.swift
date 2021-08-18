@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct BoredApp: App {
-    @StateObject private var dataModel = ActivityDataModel()
+    @StateObject private var dataModel = ActivityStore()
     
     var body: some Scene {
         WindowGroup {

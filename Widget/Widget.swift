@@ -11,7 +11,7 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     
-    @StateObject private var dataModel = ActivityDataModel()
+    @StateObject private var dataModel = ActivityStore()
     
     // MARK: - Placeholder
     func placeholder(in context: Context) -> ActivityData {
@@ -94,7 +94,7 @@ struct BoredWidget: Widget {
 
 struct Widget_Previews: PreviewProvider {
     
-    static var dataModel = ActivityDataModel()
+    static var dataModel = ActivityStore()
     
     static var previews: some View {
         Group {

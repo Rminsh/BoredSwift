@@ -46,7 +46,7 @@ struct SmallWidget : View {
 
 struct SmallWidget_Previews: PreviewProvider {
     
-    static var dataModel = ActivityDataModel()
+    static var dataModel = ActivityStore()
     
     static var previews: some View {
         SmallWidget(

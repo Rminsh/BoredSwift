@@ -2,6 +2,10 @@
 
 Bored Swift
 ======
+![SwiftUI](https://img.shields.io/badge/SwiftUI-black?logo=swift)
+![Supported platforms](https://img.shields.io/badge/Platform%20Compatibility-iOS%20|%20macOS-red?logo=apple&?color=red)
+![Xcode version](https://img.shields.io/badge/Xcode%2012+-black?logo=xcode)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/Rminsh/BoredSwift/blob/master/LICENSE)
 
 Are you bored? This app helps find you something to do via [Bored api](https://www.boredapi.com/)
 
@@ -38,14 +42,6 @@ Are you bored? This app helps find you something to do via [Bored api](https://w
 Want to contribute? I would really appreciate a hand with the development to add more features in this app.
 Feel free to Fork, edit, then pull!
 
-
-## Donation ✌🏻
-
-#### Patreon
-
-<a href="https://www.patreon.com/shalchian">
-    <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
 
 
 ## Copyright Notice 📝

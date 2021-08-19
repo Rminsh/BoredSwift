@@ -1,8 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "Participants.svg",
-      "idiom" : "universal"
+      "filename" : "Participants.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Participants@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Participants@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

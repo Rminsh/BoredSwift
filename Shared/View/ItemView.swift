@@ -14,22 +14,19 @@ struct ItemView: View {
     
     var body: some View {
         HStack {
-            Image(systemName: icon)
-                .renderingMode(.original)           // Multicolor icon (iOS 14+ , macOS 11+)
-                //.symbolRenderingMode(.multicolor) // Multicolor icon (iOS 15+ , macOS 12+)
-                .font(.largeTitle)
-                .foregroundColor(.blue)
+            Image(icon)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 35, height: 35)
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(header)
                     .font(.body)
                     .fontWeight(.light)
-                    //.foregroundStyle(.secondary) // Text style (iOS 15+ , macOS 12+)
                 
                 Text(title)
                     .font(.title3)
                     .fontWeight(.regular)
-                    //.foregroundStyle(.primary) // Text style (iOS 15+ , macOS 12+)
             }
         }
     }
@@ -42,16 +39,14 @@ struct ItemViewSmall: View {
     
     var body: some View {
         HStack {
-            Image(systemName: icon)
-                .renderingMode(.original)           // Multicolor icon (iOS 14+ , macOS 11+)
-                //.symbolRenderingMode(.multicolor) // Multicolor icon (iOS 15+ , macOS 12+)
-                .font(.body)
-                .foregroundColor(.blue)
+            Image(icon)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 14, height: 14)
             
             Text(title)
                 .font(.footnote)
                 .fontWeight(.regular)
-                //.foregroundStyle(.primary)        // Text style (iOS 15+ , macOS 12+)
         }
     }
 }

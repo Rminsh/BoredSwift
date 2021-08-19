@@ -19,14 +19,14 @@ struct SmallWidget : View {
                 .fontWeight(.medium)
             
             ItemViewSmall(
-                icon: "circle.hexagongrid.fill",
+                icon: "Type",
                 header: "Type",
                 title: entry.activity.type.capitalizingFirstLetter()
             )
             
             HStack {
                 ItemViewSmall(
-                    icon: "figure.wave.circle.fill",
+                    icon: "Accessibility",
                     header: "Accessibility",
                     title: "\(entry.activity.accessibility * 100)%"
                 )
@@ -34,7 +34,7 @@ struct SmallWidget : View {
                 Spacer()
                 
                 ItemViewSmall(
-                    icon: "person.2.circle.fill",
+                    icon: "Participants",
                     header: "Participants",
                     title: "\(entry.activity.participants)"
                 )

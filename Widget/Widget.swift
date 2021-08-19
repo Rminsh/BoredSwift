@@ -41,7 +41,7 @@ struct Provider: IntentTimelineProvider {
     func getTimeline(
         for configuration: ConfigurationIntent,
         in context: Context,
-        completion: @escaping (Timeline<Entry>) -> ()
+        completion: @escaping (Timeline<ActivityData>) -> () /// Weird build bug: The `ActivityData` should be `Entry`
     ) {
         var entries: [ActivityData] = [] /// List of entries
         

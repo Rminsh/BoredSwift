@@ -29,7 +29,7 @@ struct MediumWidget : View {
             HStack {
                 
                 ItemViewSmall(
-                    icon: "circle.hexagongrid.fill",
+                    icon: "Type",
                     header: "Type",
                     title: entry.activity.type.capitalizingFirstLetter()
                 )
@@ -37,7 +37,7 @@ struct MediumWidget : View {
                 Spacer()
                 
                 ItemViewSmall(
-                    icon: "figure.wave.circle.fill",
+                    icon: "Accessibility",
                     header: "Accessibility",
                     title: "\(entry.activity.accessibility * 100)%"
                 )
@@ -45,7 +45,7 @@ struct MediumWidget : View {
                 Spacer()
                 
                 ItemViewSmall(
-                    icon: "person.2.circle.fill",
+                    icon: "Participants",
                     header: "Participants",
                     title: "\(entry.activity.participants)"
                 )

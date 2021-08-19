@@ -109,19 +109,19 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                     
                     ItemView(
-                        icon: "figure.wave.circle.fill",
+                        icon: "Accessibility",
                         header: "Accessibility",
                         title: "\(activity.accessibility * 100)%"
                     )
                     
                     ItemView(
-                        icon: "person.2.circle.fill",
+                        icon: "Participants",
                         header: "Participants",
                         title: "\(activity.participants)"
                     )
                     
                     ItemView(
-                        icon: "circle.hexagongrid.fill",
+                        icon: "Type",
                         header: "Type",
                         title: activity.type.capitalizingFirstLetter()
                     )

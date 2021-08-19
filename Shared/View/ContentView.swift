@@ -11,6 +11,23 @@ struct ContentView: View {
     @EnvironmentObject var dataModel: ActivityStore
     
     var body: some View {
+        #if os(macOS)
+        ZStack(alignment: .center) {
+            
+            VisualEffectBlur(material: .popover, blendingMode: .behindWindow)
+            
+            context
+                .padding(.top, 30)
+                .padding(.horizontal)
+        }
+        .edgesIgnoringSafeArea(.all)
+        .frame(width: 450)
+        #else
+        context
+        #endif
+    }
+    
+    var context: some View {
         VStack {
             // Header content
             #if os(macOS)
@@ -32,7 +49,7 @@ struct ContentView: View {
             content
                 .frame(maxWidth: .infinity)
             
-            if dataModel.isLoading {
+            if dataModel.isLoading && dataModel.activity == nil {
                 ProgressView()
             }
             #else

@@ -53,6 +53,7 @@
 		C64E183626BE7B720043107C /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
 		C64E183726BE7B720043107C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E183026BE7B720043107C /* ContentView.swift */; };
 		C64E183826BE7B720043107C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E183026BE7B720043107C /* ContentView.swift */; };
+		C658675B26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */; };
 		C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 /* End PBXBuildFile section */
@@ -110,6 +111,7 @@
 		C64E182E26BE7B720043107C /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		C64E182F26BE7B720043107C /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		C64E183026BE7B720043107C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectBlur-Mac.swift"; sourceTree = "<group>"; };
 		C6BA846E26BEC2E600A126EE /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 			children = (
 				C64E180126BE76550043107C /* Info.plist */,
 				C64E180226BE76550043107C /* macOS.entitlements */,
+				C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				C64E181526BE76AB0043107C /* Activity.swift in Sources */,
 				C64E180426BE76550043107C /* BoredApp.swift in Sources */,
 				C64E183226BE7B720043107C /* Extensions+String.swift in Sources */,
+				C658675B26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift in Sources */,
 				C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */,
 				C64E183426BE7B720043107C /* ItemView.swift in Sources */,
 				C64E181D26BE77280043107C /* APIRequest.swift in Sources */,

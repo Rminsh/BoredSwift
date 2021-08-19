@@ -46,7 +46,7 @@ struct ContentView: View {
             #endif
             
             // Get another activity
-            if !dataModel.isLoading && !dataModel.hasError {
+            if !dataModel.isLoading && dataModel.activity != nil {
                 ActionView(
                     title: "Not satisfied?",
                     subtitle: "Try another one",

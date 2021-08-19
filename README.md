@@ -22,6 +22,8 @@ Are you bored? This app helps find you something to do via [Bored api](https://w
 <p align="center">
 <img src="Preview/preview_1.PNG" height="600"/>
 <img src="Preview/preview_2.PNG" height="600"/>
+<img src="Preview/preview_3.PNG" height="600"/>
+
 
 
 

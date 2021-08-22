@@ -3,7 +3,7 @@
 Bored Swift
 ======
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-black?logo=swift)
-![Supported platforms](https://img.shields.io/badge/Platform%20Compatibility-iOS%20|%20macOS-red?logo=apple&?color=red)
+![Supported platforms](https://img.shields.io/badge/Platform%20Compatibility-iOS%20|%20macOS|%20watchOS-red?logo=apple&?color=red)
 ![Xcode version](https://img.shields.io/badge/Xcode%2012+-black?logo=xcode)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/Rminsh/BoredSwift/blob/master/LICENSE)
 
@@ -22,7 +22,10 @@ Are you bored? This app helps find you something to do via [Bored api](https://w
 <p align="center">
 <img src="Preview/preview_1.PNG" height="600"/>
 <img src="Preview/preview_2.PNG" height="600"/>
+<img src="Preview/preview_4.PNG" height="250"/>
+<img src="Preview/preview_5.PNG" height="250"/>
 <img src="Preview/preview_3.PNG" height="600"/>
+
 
 
 

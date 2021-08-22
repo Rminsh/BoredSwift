@@ -27,5 +27,7 @@
 	</array>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.entertainment</string>
 </dict>
 </plist>

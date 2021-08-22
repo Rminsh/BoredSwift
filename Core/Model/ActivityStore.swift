@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WidgetKit
 
 class ActivityStore: ObservableObject {
     
@@ -29,7 +28,12 @@ class ActivityStore: ObservableObject {
     
     func fetchData() {
         guard !isLoading else { return }
+        
         isLoading = true
+        self.hasError = false
+        self.errorTitle = ""
+        self.errorSubtitle = ""
+        
         let resource = ActivityResource()
         let request = APIRequest(resource: resource)
         self.request = request
@@ -62,7 +66,12 @@ class ActivityStore: ObservableObject {
     
     func fetch(completion : @escaping(Activity) ->()) {
         guard !isLoading else { return }
+        
         isLoading = true
+        self.hasError = false
+        self.errorTitle = ""
+        self.errorSubtitle = ""
+        
         let resource = ActivityResource()
         let request = APIRequest(resource: resource)
         self.request = request

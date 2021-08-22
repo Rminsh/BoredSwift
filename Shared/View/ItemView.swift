@@ -7,46 +7,47 @@
 
 import SwiftUI
 
-struct ItemView: View {
-    var icon: String
-    var header: String
-    var title: String
-    
-    var body: some View {
-        HStack {
-            Image(icon)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 35, height: 35)
-            
-            VStack(alignment: .leading, spacing: 5) {
-                Text(header)
-                    .font(.body)
-                    .fontWeight(.light)
-                
-                Text(title)
-                    .font(.title3)
-                    .fontWeight(.regular)
-            }
-        }
-    }
+enum ItemSize {
+    case small
+    case normal
 }
 
-struct ItemViewSmall: View {
+struct ItemView: View {
+    @State var size: ItemSize = .normal
+    
     var icon: String
     var header: String
     var title: String
     
     var body: some View {
         HStack {
-            Image(icon)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 14, height: 14)
-            
-            Text(title)
-                .font(.footnote)
-                .fontWeight(.regular)
+            switch size {
+            case .small:
+                Image(icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 14, height: 14)
+                
+                Text(title)
+                    .font(.footnote)
+                    .fontWeight(.regular)
+                
+            case .normal:
+                Image(icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 35, height: 35)
+                
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(header)
+                        .font(.body)
+                        .fontWeight(.light)
+                    
+                    Text(title)
+                        .font(.title3)
+                        .fontWeight(.regular)
+                }
+            }
         }
     }
 }

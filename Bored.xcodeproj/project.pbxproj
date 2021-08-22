@@ -56,6 +56,25 @@
 		C658675B26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */; };
 		C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
+		C6ED205326D294FC004B1402 /* Bored WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C6ED205226D294FC004B1402 /* Bored WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C6ED205826D294FE004B1402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ED205726D294FE004B1402 /* Assets.xcassets */; };
+		C6ED205F26D294FE004B1402 /* Bored WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C6ED205E26D294FE004B1402 /* Bored WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C6ED206826D294FE004B1402 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED206726D294FE004B1402 /* ComplicationController.swift */; };
+		C6ED206A26D294FF004B1402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ED206926D294FF004B1402 /* Assets.xcassets */; };
+		C6ED206D26D294FF004B1402 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ED206C26D294FF004B1402 /* Preview Assets.xcassets */; };
+		C6ED207A26D2A29D004B1402 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
+		C6ED207B26D2A2A7004B1402 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
+		C6ED207C26D2A2FB004B1402 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
+		C6ED207D26D2A2FF004B1402 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
+		C6ED207E26D2A2FF004B1402 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
+		C6ED207F26D2A307004B1402 /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182426BE79A90043107C /* ActivityResource.swift */; };
+		C6ED208026D2A30C004B1402 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181A26BE77280043107C /* APIRequest.swift */; };
+		C6ED208126D2A30C004B1402 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182026BE77620043107C /* NetworkRequest.swift */; };
+		C6ED208226D2A30C004B1402 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181B26BE77280043107C /* APIResource.swift */; };
+		C6ED208326D2A30C004B1402 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
+		C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
+		C6ED208526D2A3FB004B1402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E183026BE7B720043107C /* ContentView.swift */; };
+		C6ED208626D2A435004B1402 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +84,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = C612DC2426C2BAEE0078BDE1;
 			remoteInfo = WidgetExtension;
+		};
+		C6ED205426D294FC004B1402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64E17EB26BE76540043107C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6ED205126D294FC004B1402;
+			remoteInfo = "Bored WatchKit App";
+		};
+		C6ED206026D294FE004B1402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64E17EB26BE76540043107C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6ED205D26D294FE004B1402;
+			remoteInfo = "Bored WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -76,6 +109,28 @@
 			dstSubfolderSpec = 13;
 			files = (
 				C612DC3626C2BAF00078BDE1 /* WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED207126D294FF004B1402 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C6ED205326D294FC004B1402 /* Bored WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED207426D294FF004B1402 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C6ED205F26D294FE004B1402 /* Bored WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +168,15 @@
 		C64E183026BE7B720043107C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectBlur-Mac.swift"; sourceTree = "<group>"; };
 		C6BA846E26BEC2E600A126EE /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		C6ED204F26D294FC004B1402 /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ED205226D294FC004B1402 /* Bored WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bored WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ED205726D294FE004B1402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6ED205926D294FE004B1402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6ED205E26D294FE004B1402 /* Bored WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bored WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ED206726D294FE004B1402 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C6ED206926D294FF004B1402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6ED206C26D294FF004B1402 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6ED206E26D294FF004B1402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +197,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C64E17FC26BE76550043107C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED205B26D294FE004B1402 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,6 +252,8 @@
 				C64E17F926BE76550043107C /* iOS */,
 				C64E180026BE76550043107C /* macOS */,
 				C612DC2B26C2BAEE0078BDE1 /* Widget */,
+				C6ED205626D294FC004B1402 /* Bored WatchKit App */,
+				C6ED206226D294FE004B1402 /* Bored WatchKit Extension */,
 				C612DC2626C2BAEE0078BDE1 /* Frameworks */,
 				C64E17F826BE76550043107C /* Products */,
 			);
@@ -203,6 +276,9 @@
 				C64E17F726BE76550043107C /* Bored.app */,
 				C64E17FF26BE76550043107C /* Bored.app */,
 				C612DC2526C2BAEE0078BDE1 /* WidgetExtension.appex */,
+				C6ED204F26D294FC004B1402 /* Bored.app */,
+				C6ED205226D294FC004B1402 /* Bored WatchKit App.app */,
+				C6ED205E26D294FE004B1402 /* Bored WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +358,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C6ED205626D294FC004B1402 /* Bored WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C6ED205726D294FE004B1402 /* Assets.xcassets */,
+				C6ED205926D294FE004B1402 /* Info.plist */,
+			);
+			path = "Bored WatchKit App";
+			sourceTree = "<group>";
+		};
+		C6ED206226D294FE004B1402 /* Bored WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C6ED206726D294FE004B1402 /* ComplicationController.swift */,
+				C6ED206926D294FF004B1402 /* Assets.xcassets */,
+				C6ED206E26D294FF004B1402 /* Info.plist */,
+				C6ED206B26D294FF004B1402 /* Preview Content */,
+			);
+			path = "Bored WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C6ED206B26D294FF004B1402 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6ED206C26D294FF004B1402 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +442,57 @@
 			productReference = C64E17FF26BE76550043107C /* Bored.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C6ED204E26D294FC004B1402 /* Bored */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6ED207926D294FF004B1402 /* Build configuration list for PBXNativeTarget "Bored" */;
+			buildPhases = (
+				C6ED204D26D294FC004B1402 /* Resources */,
+				C6ED207126D294FF004B1402 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6ED205526D294FC004B1402 /* PBXTargetDependency */,
+			);
+			name = Bored;
+			productName = Bored;
+			productReference = C6ED204F26D294FC004B1402 /* Bored.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C6ED205126D294FC004B1402 /* Bored WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6ED207826D294FF004B1402 /* Build configuration list for PBXNativeTarget "Bored WatchKit App" */;
+			buildPhases = (
+				C6ED205026D294FC004B1402 /* Resources */,
+				C6ED207426D294FF004B1402 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6ED206126D294FE004B1402 /* PBXTargetDependency */,
+			);
+			name = "Bored WatchKit App";
+			productName = "Bored WatchKit App";
+			productReference = C6ED205226D294FC004B1402 /* Bored WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C6ED205D26D294FE004B1402 /* Bored WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6ED207726D294FF004B1402 /* Build configuration list for PBXNativeTarget "Bored WatchKit Extension" */;
+			buildPhases = (
+				C6ED205A26D294FE004B1402 /* Sources */,
+				C6ED205B26D294FE004B1402 /* Frameworks */,
+				C6ED205C26D294FE004B1402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bored WatchKit Extension";
+			productName = "Bored WatchKit Extension";
+			productReference = C6ED205E26D294FE004B1402 /* Bored WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -354,6 +509,15 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					C64E17FE26BE76550043107C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C6ED204E26D294FC004B1402 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C6ED205126D294FC004B1402 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C6ED205D26D294FE004B1402 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -374,6 +538,9 @@
 				C64E17F626BE76550043107C /* Bored (iOS) */,
 				C64E17FE26BE76550043107C /* Bored (macOS) */,
 				C612DC2426C2BAEE0078BDE1 /* WidgetExtension */,
+				C6ED204E26D294FC004B1402 /* Bored */,
+				C6ED205126D294FC004B1402 /* Bored WatchKit App */,
+				C6ED205D26D294FE004B1402 /* Bored WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -400,6 +567,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64E180826BE76550043107C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED204D26D294FC004B1402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED205026D294FC004B1402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ED205826D294FE004B1402 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED205C26D294FE004B1402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ED206D26D294FF004B1402 /* Preview Assets.xcassets in Resources */,
+				C6ED206A26D294FF004B1402 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +661,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6ED205A26D294FE004B1402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ED207A26D2A29D004B1402 /* Extensions+String.swift in Sources */,
+				C6ED207D26D2A2FF004B1402 /* ActivityStore.swift in Sources */,
+				C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */,
+				C6ED207B26D2A2A7004B1402 /* ItemView.swift in Sources */,
+				C6ED208326D2A30C004B1402 /* NetworkingError.swift in Sources */,
+				C6ED206826D294FE004B1402 /* ComplicationController.swift in Sources */,
+				C6ED208626D2A435004B1402 /* ActionView.swift in Sources */,
+				C6ED207E26D2A2FF004B1402 /* Activity.swift in Sources */,
+				C6ED207F26D2A307004B1402 /* ActivityResource.swift in Sources */,
+				C6ED208126D2A30C004B1402 /* NetworkRequest.swift in Sources */,
+				C6ED208026D2A30C004B1402 /* APIRequest.swift in Sources */,
+				C6ED208526D2A3FB004B1402 /* ContentView.swift in Sources */,
+				C6ED208226D2A30C004B1402 /* APIResource.swift in Sources */,
+				C6ED207C26D2A2FB004B1402 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -477,6 +689,16 @@
 			isa = PBXTargetDependency;
 			target = C612DC2426C2BAEE0078BDE1 /* WidgetExtension */;
 			targetProxy = C612DC3426C2BAF00078BDE1 /* PBXContainerItemProxy */;
+		};
+		C6ED205526D294FC004B1402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6ED205126D294FC004B1402 /* Bored WatchKit App */;
+			targetProxy = C6ED205426D294FC004B1402 /* PBXContainerItemProxy */;
+		};
+		C6ED206126D294FE004B1402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6ED205D26D294FE004B1402 /* Bored WatchKit Extension */;
+			targetProxy = C6ED206026D294FE004B1402 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -738,6 +960,125 @@
 			};
 			name = Release;
 		};
+		C6ED206F26D294FF004B1402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YB99NQ76R5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bored;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C6ED207026D294FF004B1402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YB99NQ76R5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bored;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6ED207226D294FF004B1402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YB99NQ76R5;
+				IBSC_MODULE = Bored_WatchKit_Extension;
+				INFOPLIST_FILE = "Bored WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bored.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C6ED207326D294FF004B1402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YB99NQ76R5;
+				IBSC_MODULE = Bored_WatchKit_Extension;
+				INFOPLIST_FILE = "Bored WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bored.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C6ED207526D294FF004B1402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bored WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = YB99NQ76R5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bored WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bored.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C6ED207626D294FF004B1402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bored WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = YB99NQ76R5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bored WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bored.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,6 +1114,33 @@
 			buildConfigurations = (
 				C64E180F26BE76550043107C /* Debug */,
 				C64E181026BE76550043107C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6ED207726D294FF004B1402 /* Build configuration list for PBXNativeTarget "Bored WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ED207526D294FF004B1402 /* Debug */,
+				C6ED207626D294FF004B1402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6ED207826D294FF004B1402 /* Build configuration list for PBXNativeTarget "Bored WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ED207226D294FF004B1402 /* Debug */,
+				C6ED207326D294FF004B1402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6ED207926D294FF004B1402 /* Build configuration list for PBXNativeTarget "Bored" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ED206F26D294FF004B1402 /* Debug */,
+				C6ED207026D294FF004B1402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

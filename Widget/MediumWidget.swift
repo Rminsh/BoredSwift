@@ -28,7 +28,8 @@ struct MediumWidget : View {
             
             HStack {
                 
-                ItemViewSmall(
+                ItemView(
+                    size: .small,
                     icon: "Type",
                     header: "Type",
                     title: entry.activity.type.capitalizingFirstLetter()
@@ -36,7 +37,8 @@ struct MediumWidget : View {
                 
                 Spacer()
                 
-                ItemViewSmall(
+                ItemView(
+                    size: .small,
                     icon: "Accessibility",
                     header: "Accessibility",
                     title: "\(entry.activity.accessibility * 100)%"
@@ -44,7 +46,8 @@ struct MediumWidget : View {
                 
                 Spacer()
                 
-                ItemViewSmall(
+                ItemView(
+                    size: .small,
                     icon: "Participants",
                     header: "Participants",
                     title: "\(entry.activity.participants)"

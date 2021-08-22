@@ -8,22 +8,33 @@
 import SwiftUI
 
 struct ActionView: View {
+    @State var size: ItemSize = .normal
+    @State var icon: String = ""
     @State var title: String
     @State var subtitle: String
     @State var action: () -> Void
     
     var body: some View {
         VStack {
-            Text(title)
-                .font(.body)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
+            if size == .normal {
+                
+                if icon != "" {
+                    Image(systemName: icon)
+                        .font(.title)
+                        .foregroundColor(.accentColor)
+                        .padding()
+                }
+                
+                Text(title)
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+            }
             
             Button(action: action) {
                 Text(subtitle)
                     .font(.body)
             }
-            //.buttonStyle(.bordered)
         }
         .padding()
     }

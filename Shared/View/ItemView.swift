@@ -23,6 +23,16 @@ struct ItemView: View {
         HStack {
             switch size {
             case .small:
+                #if os(macOS)
+                Image(icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 16, height: 16)
+                
+                Text(title)
+                    .font(.body)
+                    .fontWeight(.regular)
+                #else
                 Image(icon)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -31,6 +41,7 @@ struct ItemView: View {
                 Text(title)
                     .font(.footnote)
                     .fontWeight(.regular)
+                #endif
                 
             case .normal:
                 Image(icon)

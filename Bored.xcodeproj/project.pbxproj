@@ -94,6 +94,7 @@
 		C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
 		C6ED208526D2A3FB004B1402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E183026BE7B720043107C /* ContentView.swift */; };
 		C6ED208626D2A435004B1402 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
+		C6ED379E26D38BE800F9AA4A /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -787,6 +788,7 @@
 				C64E183826BE7B720043107C /* ContentView.swift in Sources */,
 				C64E181826BE76BA0043107C /* Constants.swift in Sources */,
 				C64E182A26BE7A650043107C /* ActivityStore.swift in Sources */,
+				C6ED379E26D38BE800F9AA4A /* Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

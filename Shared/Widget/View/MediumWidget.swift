@@ -21,10 +21,17 @@ struct MediumWidget : View {
                 .font(.title2)
                 .fontWeight(.light)
             
+            #if os(macOS)
+            Text(entry.activity.activity)
+                .font(.title2)
+                .fontWeight(.medium)
+                .padding(.horizontal)
+            #else
             Text(entry.activity.activity)
                 .font(.title3)
                 .fontWeight(.medium)
                 .padding(.horizontal)
+            #endif
             
             HStack {
                 

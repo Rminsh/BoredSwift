@@ -14,9 +14,15 @@ struct SmallWidget : View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
+            #if os(macOS)
+            Text(entry.activity.activity)
+                .font(.title3)
+                .fontWeight(.medium)
+            #else
             Text(entry.activity.activity)
                 .font(.subheadline)
                 .fontWeight(.medium)
+            #endif
             
             ItemView(
                 size: .small,

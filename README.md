@@ -58,3 +58,5 @@ Feel free to Fork, edit, then pull!
 Copyright (C) 2021 Armin Shalchian
 
 Licensed under the [GNU Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html) license (see the LICENSE file).
+
+The icon is inspired by [Bored eyes](https://dribbble.com/shots/5536525-Bored-Eyes)

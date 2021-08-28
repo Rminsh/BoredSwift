@@ -14,6 +14,44 @@ struct ActivityView: View {
     var body: some View {
         ZStack {
             if let activity = dataModel.activity {
+                #if os(watchOS)
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(activity.activity)
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(nil)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity)
+                    
+                    ItemView(
+                        size: .small,
+                        icon: "Type",
+                        header: "Type",
+                        title: activity.type.capitalizingFirstLetter()
+                    )
+                    .padding(.horizontal)
+                    
+                    HStack {
+                        ItemView(
+                            size: .small,
+                            icon: "Accessibility",
+                            header: "Accessibility",
+                            title: "\(activity.accessibility * 100)%"
+                        )
+                        
+                        Spacer()
+                        
+                        ItemView(
+                            size: .small,
+                            icon: "Participants",
+                            header: "Participants",
+                            title: "\(activity.participants)"
+                        )
+                    }
+                    .padding(.horizontal)
+                }
+                #else
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Let's")
                         .font(.title2)
@@ -47,6 +85,7 @@ struct ActivityView: View {
                         title: activity.type.capitalizingFirstLetter()
                     )
                 }
+                #endif
             }
         }
     }

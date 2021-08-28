@@ -16,25 +16,7 @@ struct ContentView: View {
             ZStack {
                 // Initial loading (Activity is null)
                 if dataModel.isLoading && dataModel.activity == nil {
-                    VStack {
-                        Text("Are you bored?")
-                            .font(.title2)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(nil)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .frame(maxWidth: .infinity)
-                        
-                        Text("Let's find you something to do")
-                            .font(.body)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(nil)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .frame(maxWidth: .infinity)
-                        
-                        ProgressView()
-                    }
+                    HeaderView()
                 }
                 
                 // Initial loading (if Activity failed to load, network error)
@@ -51,44 +33,8 @@ struct ContentView: View {
                 ScrollView {
                     VStack {
                         // Content
-                        if let activity = dataModel.activity {
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text(activity.activity)
-                                    .font(.title3)
-                                    .fontWeight(.medium)
-                                    .multilineTextAlignment(.leading)
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .frame(maxWidth: .infinity)
-                                
-                                ItemView(
-                                    size: .small,
-                                    icon: "Type",
-                                    header: "Type",
-                                    title: activity.type.capitalizingFirstLetter()
-                                )
-                                .padding(.horizontal)
-                                
-                                HStack {
-                                    ItemView(
-                                        size: .small,
-                                        icon: "Accessibility",
-                                        header: "Accessibility",
-                                        title: "\(activity.accessibility * 100)%"
-                                    )
-                                    
-                                    Spacer()
-                                    
-                                    ItemView(
-                                        size: .small,
-                                        icon: "Participants",
-                                        header: "Participants",
-                                        title: "\(activity.participants)"
-                                    )
-                                }
-                                .padding(.horizontal)
-                            }
-                        }
+                        ActivityView()
+                            .environmentObject(dataModel)
                         
                         // Get another activity
                         if !dataModel.isLoading && dataModel.activity != nil {

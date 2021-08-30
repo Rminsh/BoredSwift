@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C609003926DA37D200970A2C /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609003826DA37D200970A2C /* IntroView.swift */; };
 		C60F785526DA27860007B1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785426DA27860007B1C4 /* ContentView.swift */; };
 		C60F785726DA27E40007B1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785626DA27E40007B1C4 /* ContentView.swift */; };
 		C60F785A26DA28720007B1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785926DA28720007B1C4 /* ContentView.swift */; };
@@ -182,6 +183,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C609003826DA37D200970A2C /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		C60F785426DA27860007B1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C60F785626DA27E40007B1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
 		C60F785926DA28720007B1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 		C60F785826DA28650007B1C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C609003826DA37D200970A2C /* IntroView.swift */,
 				C60F785926DA28720007B1C4 /* ContentView.swift */,
 			);
 			path = View;
@@ -812,6 +815,7 @@
 				C64E181E26BE77280043107C /* APIResource.swift in Sources */,
 				C60F785C26DA29650007B1C4 /* HeaderView.swift in Sources */,
 				C64E182526BE79A90043107C /* ActivityResource.swift in Sources */,
+				C609003926DA37D200970A2C /* IntroView.swift in Sources */,
 				C60F785A26DA28720007B1C4 /* ContentView.swift in Sources */,
 				C64E181726BE76BA0043107C /* Constants.swift in Sources */,
 				C64E182926BE7A650043107C /* ActivityStore.swift in Sources */,

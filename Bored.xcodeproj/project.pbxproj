@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C609003926DA37D200970A2C /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609003826DA37D200970A2C /* IntroView.swift */; };
 		C60F785526DA27860007B1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785426DA27860007B1C4 /* ContentView.swift */; };
-		C60F785726DA27E40007B1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785626DA27E40007B1C4 /* ContentView.swift */; };
 		C60F785A26DA28720007B1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785926DA28720007B1C4 /* ContentView.swift */; };
 		C60F785C26DA29650007B1C4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785B26DA29650007B1C4 /* HeaderView.swift */; };
 		C60F785D26DA29650007B1C4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F785B26DA29650007B1C4 /* HeaderView.swift */; };
@@ -81,6 +80,7 @@
 		C65BCCFA26D2D888001A7F19 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C65BCCFB26D2D88B001A7F19 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
 		C65BCCFC26D2D89A001A7F19 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
+		C6B2F1DC26E2910F004285BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DB26E2910F004285BB /* ContentView.swift */; };
 		C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6ED205326D294FC004B1402 /* Bored WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C6ED205226D294FC004B1402 /* Bored WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -185,7 +185,6 @@
 /* Begin PBXFileReference section */
 		C609003826DA37D200970A2C /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		C60F785426DA27860007B1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C60F785626DA27E40007B1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
 		C60F785926DA28720007B1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C60F785B26DA29650007B1C4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C60F785F26DA29EE0007B1C4 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
@@ -220,6 +219,7 @@
 		C64E182E26BE7B720043107C /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		C64E182F26BE7B720043107C /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectBlur-Mac.swift"; sourceTree = "<group>"; };
+		C6B2F1DB26E2910F004285BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6BA846E26BEC2E600A126EE /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		C6ED204F26D294FC004B1402 /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED205226D294FC004B1402 /* Bored WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bored WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,14 +296,6 @@
 			children = (
 				C609003826DA37D200970A2C /* IntroView.swift */,
 				C60F785926DA28720007B1C4 /* ContentView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C60F786326DA2C280007B1C4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C60F785626DA27E40007B1C4 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -483,6 +475,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C6B2F1DA26E29105004285BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6B2F1DB26E2910F004285BB /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C6ED205626D294FC004B1402 /* Bored WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,7 +495,7 @@
 		C6ED206226D294FE004B1402 /* Bored WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C60F786326DA2C280007B1C4 /* View */,
+				C6B2F1DA26E29105004285BB /* View */,
 				C6ED206726D294FE004B1402 /* ComplicationController.swift */,
 				C6ED206926D294FF004B1402 /* Assets.xcassets */,
 				C6ED206E26D294FF004B1402 /* Info.plist */,
@@ -852,6 +852,7 @@
 			files = (
 				C6ED207A26D2A29D004B1402 /* Extensions+String.swift in Sources */,
 				C6ED207D26D2A2FF004B1402 /* ActivityStore.swift in Sources */,
+				C6B2F1DC26E2910F004285BB /* ContentView.swift in Sources */,
 				C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */,
 				C6ED207B26D2A2A7004B1402 /* ItemView.swift in Sources */,
 				C6ED208326D2A30C004B1402 /* NetworkingError.swift in Sources */,
@@ -863,7 +864,6 @@
 				C6ED208126D2A30C004B1402 /* NetworkRequest.swift in Sources */,
 				C60F785E26DA29650007B1C4 /* HeaderView.swift in Sources */,
 				C6ED208026D2A30C004B1402 /* APIRequest.swift in Sources */,
-				C60F785726DA27E40007B1C4 /* ContentView.swift in Sources */,
 				C6ED208226D2A30C004B1402 /* APIResource.swift in Sources */,
 				C6ED207C26D2A2FB004B1402 /* Constants.swift in Sources */,
 			);

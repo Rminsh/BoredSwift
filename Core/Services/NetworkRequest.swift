@@ -18,7 +18,7 @@ extension NetworkRequest {
     func load(_ url: URL, withCompletion completion: @escaping (Result<ModelType, NetworkingError>)-> Void) {
         let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _ , _) -> Void in
             guard let data = data, let value = self?.decode(data) else {
-                DispatchQueue.main.async { completion(.failure(.errorParse)) }
+                DispatchQueue.main.async { completion(.failure(.badNetworkingRequest)) }
                 return
             }
             DispatchQueue.main.async { completion(value) }

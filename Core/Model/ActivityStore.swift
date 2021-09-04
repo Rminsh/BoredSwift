@@ -61,7 +61,7 @@ class ActivityStore: ObservableObject {
                 self.hasError = true
                 self.errorTitle = NetworkingError.badNetworkingRequest.errorDescription ?? ""
                 self.errorSubtitle = "Try again"
-                print("Network error (Bad request")
+                print("Network error (Bad request)")
                 
             case .failure(.errorParse):
                 self.hasError = true

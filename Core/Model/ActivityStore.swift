@@ -24,6 +24,11 @@ class ActivityStore: ObservableObject {
     @Published private(set) var errorTitle: String = ""
     @Published private(set) var errorSubtitle: String = ""
     
+    @Published private(set) var hasFilter: Bool = false
+    @Published private var typeFilter = ActivityType.all
+    @Published private var participantsFilter = 1
+    @Published private var budgetFilter = 0.0
+    
     private var request: APIRequest<ActivityResource>?
     
     func fetchData() {
@@ -34,7 +39,16 @@ class ActivityStore: ObservableObject {
         self.errorTitle = ""
         self.errorSubtitle = ""
         
-        let resource = ActivityResource()
+        var resource = ActivityResource()
+        
+        if hasFilter {
+            resource = ActivityResource(
+                type: typeFilter.rawValue,
+                participants: String(participantsFilter),
+                maxprice: String(budgetFilter)
+            )
+        }
+        
         let request = APIRequest(resource: resource)
         self.request = request
         request.execute { result in
@@ -81,7 +95,7 @@ class ActivityStore: ObservableObject {
             case .success:
                 self.activity = try? result.get()
                 
-                /// Saving data to AppStorage
+                /// Saving data to AppStorage (Loading activity for widgets if network is disconnected)
                 if let activity = self.activity {
                     self.activityTitle = activity.activity
                     self.activityAccessibility = activity.accessibility
@@ -111,6 +125,22 @@ class ActivityStore: ObservableObject {
             key: self.activityKey,
             accessibility: self.activityAccessibility
         )
+    }
+    
+    func setFilters(type: ActivityType, participants: Int, budget: Double) {
+        self.hasFilter = true
+        self.typeFilter = type
+        self.participantsFilter = participants
+        self.budgetFilter = budget
+        
+        fetchData()
+    }
+    
+    func clearFilters() {
+        hasFilter = false
+        typeFilter = ActivityType.all
+        participantsFilter = 1
+        budgetFilter = 0.0
     }
     
     func testData() -> Activity {

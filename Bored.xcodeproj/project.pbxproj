@@ -81,6 +81,8 @@
 		C65BCCFB26D2D88B001A7F19 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
 		C65BCCFC26D2D89A001A7F19 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
 		C6B2F1DC26E2910F004285BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DB26E2910F004285BB /* ContentView.swift */; };
+		C6B2F1DE26E2A1A4004285BB /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DD26E2A1A4004285BB /* FilterView.swift */; };
+		C6B2F1E026E2AC87004285BB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */; };
 		C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6ED205326D294FC004B1402 /* Bored WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C6ED205226D294FC004B1402 /* Bored WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -220,6 +222,8 @@
 		C64E182F26BE7B720043107C /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectBlur-Mac.swift"; sourceTree = "<group>"; };
 		C6B2F1DB26E2910F004285BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6B2F1DD26E2A1A4004285BB /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		C6BA846E26BEC2E600A126EE /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		C6ED204F26D294FC004B1402 /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED205226D294FC004B1402 /* Bored WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bored WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +300,8 @@
 			children = (
 				C609003826DA37D200970A2C /* IntroView.swift */,
 				C60F785926DA28720007B1C4 /* ContentView.swift */,
+				C6B2F1DD26E2A1A4004285BB /* FilterView.swift */,
+				C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -806,11 +812,13 @@
 				C64E182126BE77620043107C /* NetworkRequest.swift in Sources */,
 				C612DC3326C2BAF00078BDE1 /* Widget.intentdefinition in Sources */,
 				C64E181426BE76AB0043107C /* Activity.swift in Sources */,
+				C6B2F1DE26E2A1A4004285BB /* FilterView.swift in Sources */,
 				C64E180326BE76550043107C /* BoredApp.swift in Sources */,
 				C60F786026DA29EE0007B1C4 /* ActivityView.swift in Sources */,
 				C64E183126BE7B720043107C /* Extensions+String.swift in Sources */,
 				C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */,
 				C64E183326BE7B720043107C /* ItemView.swift in Sources */,
+				C6B2F1E026E2AC87004285BB /* BottomSheetView.swift in Sources */,
 				C64E181C26BE77280043107C /* APIRequest.swift in Sources */,
 				C64E181E26BE77280043107C /* APIResource.swift in Sources */,
 				C60F785C26DA29650007B1C4 /* HeaderView.swift in Sources */,

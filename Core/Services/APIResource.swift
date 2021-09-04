@@ -29,7 +29,9 @@ extension APIResource {
         }
         
         if let type = type {
-            components.queryItems?.append(URLQueryItem(name: "type", value: type))
+            if type != "all" && type != "" {
+                components.queryItems?.append(URLQueryItem(name: "type", value: type))
+            }
         }
         
         if let participants = participants {

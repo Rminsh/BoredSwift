@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var dataModel: ActivityStore
+    
     @State private var filterSheetShown = false
+    @State private var moreSheetShown = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -55,15 +57,28 @@ struct ContentView: View {
                     )
                 }
                 
-                Button(action: {filterSheetShown.toggle()}) {
-                    Image(systemName: "slider.horizontal.3")
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundColor(.white)
-                        .padding(8)
-                        .background(
-                            Circle()
-                                .fill(dataModel.hasFilter ? Color.accentColor : Color.gray)
-                        )
+                HStack {
+                    Button(action: {filterSheetShown.toggle()}) {
+                        Image(systemName: "slider.horizontal.3")
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundColor(.white)
+                            .padding(8)
+                            .background(
+                                Circle()
+                                    .fill(dataModel.hasFilter ? Color.accentColor : Color.gray)
+                            )
+                    }
+                    
+                    Button(action: {moreSheetShown.toggle()}) {
+                        Image(systemName: "info")
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundColor(.white)
+                            .padding(11)
+                            .background(
+                                Circle()
+                                    .fill(Color.gray)
+                            )
+                    }
                 }
             }
             .frame(maxWidth: .infinity)
@@ -77,6 +92,9 @@ struct ContentView: View {
                 FilterView(closeView: {filterSheetShown.toggle()})
                     .environmentObject(dataModel)
             }
+        }
+        .sheet(isPresented: $moreSheetShown) {
+            MoreView()
         }
         .ignoresSafeArea(.all)
         .onAppear { dataModel.fetchData() }

@@ -64,6 +64,7 @@
 		C64E183426BE7B720043107C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
 		C64E183526BE7B720043107C /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
 		C64E183626BE7B720043107C /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
+		C650657D26E4B71F00604E8C /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C650657C26E4B71F00604E8C /* MoreView.swift */; };
 		C658675B26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */; };
 		C65BCCEE26D2D82D001A7F19 /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648678026CB9D5F004F2C80 /* MediumWidget.swift */; };
 		C65BCCEF26D2D82D001A7F19 /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */; };
@@ -220,6 +221,7 @@
 		C64E182C26BE7B720043107C /* Extensions+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
 		C64E182E26BE7B720043107C /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		C64E182F26BE7B720043107C /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		C650657C26E4B71F00604E8C /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		C658675A26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectBlur-Mac.swift"; sourceTree = "<group>"; };
 		C6B2F1DB26E2910F004285BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6B2F1DD26E2A1A4004285BB /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
@@ -298,10 +300,11 @@
 		C60F785826DA28650007B1C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C609003826DA37D200970A2C /* IntroView.swift */,
+				C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */,
 				C60F785926DA28720007B1C4 /* ContentView.swift */,
 				C6B2F1DD26E2A1A4004285BB /* FilterView.swift */,
-				C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */,
+				C609003826DA37D200970A2C /* IntroView.swift */,
+				C650657C26E4B71F00604E8C /* MoreView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 				C64E182126BE77620043107C /* NetworkRequest.swift in Sources */,
 				C612DC3326C2BAF00078BDE1 /* Widget.intentdefinition in Sources */,
 				C64E181426BE76AB0043107C /* Activity.swift in Sources */,
+				C650657D26E4B71F00604E8C /* MoreView.swift in Sources */,
 				C6B2F1DE26E2A1A4004285BB /* FilterView.swift in Sources */,
 				C64E180326BE76550043107C /* BoredApp.swift in Sources */,
 				C60F786026DA29EE0007B1C4 /* ActivityView.swift in Sources */,

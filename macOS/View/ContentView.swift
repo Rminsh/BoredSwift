@@ -20,15 +20,13 @@ struct ContentView: View {
                 .padding(.horizontal)
         }
         .edgesIgnoringSafeArea(.all)
-        .frame(width: 450)
     }
     
     var context: some View {
         VStack {
             // Header content
             HeaderView()
-                .frame(minWidth: 250)
-                .padding(.top, 100)
+                .frame(minWidth: 350)
                 .padding(.bottom, 50)
 
             
@@ -64,7 +62,7 @@ struct ContentView: View {
                 )
             }
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: 450, maxHeight: 550)
         .padding()
         .onAppear { dataModel.fetchData() }
     }
@@ -73,5 +71,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ActivityStore())
     }
 }

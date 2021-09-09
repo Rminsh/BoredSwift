@@ -20,43 +20,49 @@ struct ItemView: View {
     var title: String
     
     var body: some View {
-        HStack {
+        Group {
             switch size {
             case .small:
                 #if os(macOS)
-                Image(icon)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 16, height: 16)
-                
-                Text(title)
-                    .font(.body)
-                    .fontWeight(.regular)
+                HStack {
+                    Image(icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 16, height: 16)
+                    
+                    Text(title)
+                        .font(.body)
+                        .fontWeight(.regular)
+                }
                 #else
-                Image(icon)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 14, height: 14)
-                
-                Text(title)
-                    .font(.footnote)
-                    .fontWeight(.regular)
+                HStack {
+                    Image(icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 14, height: 14)
+                    
+                    Text(title)
+                        .font(.footnote)
+                        .fontWeight(.regular)
+                }
                 #endif
                 
             case .normal:
-                Image(icon)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 35, height: 35)
-                
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(header)
-                        .font(.body)
-                        .fontWeight(.light)
+                HStack {
+                    Image(icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 35, height: 35)
                     
-                    Text(title)
-                        .font(.title3)
-                        .fontWeight(.regular)
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(header)
+                            .font(.body)
+                            .fontWeight(.light)
+                        
+                        Text(title)
+                            .font(.title3)
+                            .fontWeight(.regular)
+                    }
                 }
             }
         }

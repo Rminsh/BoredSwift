@@ -43,7 +43,8 @@ struct ContentView: View {
                     )
                     .frame(maxWidth: .infinity)
                     .frame(height: 80)
-                } else if dataModel.isLoading && dataModel.activity != nil {
+                }
+                if dataModel.isLoading && dataModel.activity != nil {
                     ProgressView()
                         .frame(height: 80)
                 }

@@ -15,7 +15,7 @@ struct FilterView: View {
     
     @State private var selectedActivity = ActivityType.all
     @State private var participants = 1
-    @State private var budget = 0.0
+    @State private var budget = 10.0
     
     var body: some View {
         VStack(spacing: 25) {

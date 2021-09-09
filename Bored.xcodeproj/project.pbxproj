@@ -20,8 +20,6 @@
 		C612DC2A26C2BAEE0078BDE1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C612DC2926C2BAEE0078BDE1 /* SwiftUI.framework */; };
 		C612DC2D26C2BAEE0078BDE1 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2C26C2BAEE0078BDE1 /* Widget.swift */; };
 		C612DC3026C2BAF00078BDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C612DC2F26C2BAF00078BDE1 /* Assets.xcassets */; };
-		C612DC3226C2BAF00078BDE1 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */; };
-		C612DC3326C2BAF00078BDE1 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */; };
 		C612DC3626C2BAF00078BDE1 /* WidgetExtension(iOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C612DC2526C2BAEE0078BDE1 /* WidgetExtension(iOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C612DC3B26C2BD4C0078BDE1 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
 		C612DC3C26C2BD4E0078BDE1 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
@@ -70,7 +68,6 @@
 		C65BCCEF26D2D82D001A7F19 /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */; };
 		C65BCCF026D2D82D001A7F19 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2C26C2BAEE0078BDE1 /* Widget.swift */; };
 		C65BCCF126D2D82D001A7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C612DC2F26C2BAF00078BDE1 /* Assets.xcassets */; };
-		C65BCCF226D2D82D001A7F19 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */; };
 		C65BCCF326D2D87B001A7F19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
 		C65BCCF426D2D87E001A7F19 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
 		C65BCCF526D2D87E001A7F19 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
@@ -104,7 +101,6 @@
 		C6ED208326D2A30C004B1402 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
 		C6ED208626D2A435004B1402 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
-		C6ED379E26D38BE800F9AA4A /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,7 +191,6 @@
 		C612DC2726C2BAEE0078BDE1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		C612DC2926C2BAEE0078BDE1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		C612DC2C26C2BAEE0078BDE1 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
-		C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget.intentdefinition; sourceTree = "<group>"; };
 		C612DC2F26C2BAF00078BDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C612DC3126C2BAF00078BDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidget.swift; sourceTree = "<group>"; };
@@ -469,7 +464,6 @@
 				C648678526CC32D5004F2C80 /* Model */,
 				C6A19C4B26D2D66B0028C926 /* View */,
 				C612DC2C26C2BAEE0078BDE1 /* Widget.swift */,
-				C612DC2E26C2BAEE0078BDE1 /* Widget.intentdefinition */,
 				C612DC2F26C2BAF00078BDE1 /* Assets.xcassets */,
 			);
 			path = Widget;
@@ -767,7 +761,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C612DC3226C2BAF00078BDE1 /* Widget.intentdefinition in Sources */,
 				C612DC3F26C2BD540078BDE1 /* APIRequest.swift in Sources */,
 				C612DC2D26C2BAEE0078BDE1 /* Widget.swift in Sources */,
 				C612DC4626C2CFC90078BDE1 /* SmallWidget.swift in Sources */,
@@ -797,7 +790,6 @@
 				C65BCCEF26D2D82D001A7F19 /* SmallWidget.swift in Sources */,
 				C65BCCFA26D2D888001A7F19 /* NetworkingError.swift in Sources */,
 				C65BCCF026D2D82D001A7F19 /* Widget.swift in Sources */,
-				C65BCCF226D2D82D001A7F19 /* Widget.intentdefinition in Sources */,
 				C65BCCF826D2D888001A7F19 /* APIRequest.swift in Sources */,
 				C65BCCF626D2D883001A7F19 /* ActivityResource.swift in Sources */,
 				C65BCCF726D2D888001A7F19 /* APIResource.swift in Sources */,
@@ -813,7 +805,6 @@
 			files = (
 				C64E183526BE7B720043107C /* ActionView.swift in Sources */,
 				C64E182126BE77620043107C /* NetworkRequest.swift in Sources */,
-				C612DC3326C2BAF00078BDE1 /* Widget.intentdefinition in Sources */,
 				C64E181426BE76AB0043107C /* Activity.swift in Sources */,
 				C650657D26E4B71F00604E8C /* MoreView.swift in Sources */,
 				C6B2F1DE26E2A1A4004285BB /* FilterView.swift in Sources */,
@@ -853,7 +844,6 @@
 				C64E182626BE79A90043107C /* ActivityResource.swift in Sources */,
 				C64E181826BE76BA0043107C /* Constants.swift in Sources */,
 				C64E182A26BE7A650043107C /* ActivityStore.swift in Sources */,
-				C6ED379E26D38BE800F9AA4A /* Widget.intentdefinition in Sources */,
 				C60F785D26DA29650007B1C4 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

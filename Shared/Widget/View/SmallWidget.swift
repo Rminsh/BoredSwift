@@ -58,12 +58,7 @@ struct SmallWidget_Previews: PreviewProvider {
     static var dataModel = ActivityStore()
     
     static var previews: some View {
-        SmallWidget(
-            entry: ActivityData(
-                activity: dataModel.testData(),
-                configuration: ConfigurationIntent()
-            )
-        )
+        SmallWidget(entry: ActivityData(activity: dataModel.testData()))
         .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

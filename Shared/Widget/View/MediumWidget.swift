@@ -72,12 +72,7 @@ struct MediumWidget_Previews: PreviewProvider {
     static var dataModel = ActivityStore()
     
     static var previews: some View {
-        MediumWidget(
-            entry: ActivityData(
-                activity: dataModel.testData(),
-                configuration: ConfigurationIntent()
-            )
-        )
+        MediumWidget(entry: ActivityData(activity: dataModel.testData()))
         .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

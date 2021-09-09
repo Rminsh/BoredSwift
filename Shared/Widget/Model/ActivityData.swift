@@ -9,11 +9,9 @@ import WidgetKit
 
 struct ActivityData : TimelineEntry {
     var date =  Date()
-    let configuration: ConfigurationIntent
     let activity : Activity
     
-    init(activity : Activity, configuration: ConfigurationIntent) {
+    init(activity : Activity) {
         self.activity = activity
-        self.configuration = configuration
     }
 }

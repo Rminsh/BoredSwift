@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import BoredSDK
 
 class ActivityStore: ObservableObject {
     
@@ -29,7 +30,7 @@ class ActivityStore: ObservableObject {
     @Published private var participantsFilter = 1
     @Published private var budgetFilter = 0.0
     
-    private var request: APIRequest<ActivityResource>?
+    private var request: BoredSDK<ActivityResource>?
     
     func fetchData() {
         guard !isLoading else { return }
@@ -49,7 +50,7 @@ class ActivityStore: ObservableObject {
             )
         }
         
-        let request = APIRequest(resource: resource)
+        let request = BoredSDK(resource: resource)
         self.request = request
         request.execute { result in
             self.isLoading = false
@@ -87,7 +88,7 @@ class ActivityStore: ObservableObject {
         self.errorSubtitle = ""
         
         let resource = ActivityResource()
-        let request = APIRequest(resource: resource)
+        let request = BoredSDK(resource: resource)
         self.request = request
         request.execute { result in
             self.isLoading = false

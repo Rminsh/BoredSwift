@@ -5,6 +5,7 @@
 //  Created by armin on 9/3/21.
 //
 
+import BoredSDK
 import SwiftUI
 
 struct FilterView: View {

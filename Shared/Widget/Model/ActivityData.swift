@@ -6,6 +6,7 @@
 //
 
 import WidgetKit
+import BoredSDK
 
 struct ActivityData : TimelineEntry {
     var date =  Date()

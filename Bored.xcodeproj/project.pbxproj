@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,13 +22,6 @@
 		C612DC3026C2BAF00078BDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C612DC2F26C2BAF00078BDE1 /* Assets.xcassets */; };
 		C612DC3626C2BAF00078BDE1 /* WidgetExtension(iOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C612DC2526C2BAEE0078BDE1 /* WidgetExtension(iOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C612DC3B26C2BD4C0078BDE1 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
-		C612DC3C26C2BD4E0078BDE1 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
-		C612DC3D26C2BD510078BDE1 /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182426BE79A90043107C /* ActivityResource.swift */; };
-		C612DC3E26C2BD540078BDE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
-		C612DC3F26C2BD540078BDE1 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181A26BE77280043107C /* APIRequest.swift */; };
-		C612DC4026C2BD540078BDE1 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181B26BE77280043107C /* APIResource.swift */; };
-		C612DC4126C2BD540078BDE1 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
-		C612DC4226C2BD540078BDE1 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182026BE77620043107C /* NetworkRequest.swift */; };
 		C612DC4326C2BF470078BDE1 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
 		C612DC4426C2BF580078BDE1 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
 		C612DC4626C2CFC90078BDE1 /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */; };
@@ -42,18 +35,6 @@
 		C64E180426BE76550043107C /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
 		C64E180726BE76550043107C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64E17F226BE76550043107C /* Assets.xcassets */; };
 		C64E180826BE76550043107C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64E17F226BE76550043107C /* Assets.xcassets */; };
-		C64E181426BE76AB0043107C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
-		C64E181526BE76AB0043107C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
-		C64E181726BE76BA0043107C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
-		C64E181826BE76BA0043107C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
-		C64E181C26BE77280043107C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181A26BE77280043107C /* APIRequest.swift */; };
-		C64E181D26BE77280043107C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181A26BE77280043107C /* APIRequest.swift */; };
-		C64E181E26BE77280043107C /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181B26BE77280043107C /* APIResource.swift */; };
-		C64E181F26BE77280043107C /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181B26BE77280043107C /* APIResource.swift */; };
-		C64E182126BE77620043107C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182026BE77620043107C /* NetworkRequest.swift */; };
-		C64E182226BE77620043107C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182026BE77620043107C /* NetworkRequest.swift */; };
-		C64E182526BE79A90043107C /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182426BE79A90043107C /* ActivityResource.swift */; };
-		C64E182626BE79A90043107C /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182426BE79A90043107C /* ActivityResource.swift */; };
 		C64E182926BE7A650043107C /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
 		C64E182A26BE7A650043107C /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
 		C64E183126BE7B720043107C /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
@@ -68,21 +49,17 @@
 		C65BCCEF26D2D82D001A7F19 /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC4526C2CFC90078BDE1 /* SmallWidget.swift */; };
 		C65BCCF026D2D82D001A7F19 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612DC2C26C2BAEE0078BDE1 /* Widget.swift */; };
 		C65BCCF126D2D82D001A7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C612DC2F26C2BAF00078BDE1 /* Assets.xcassets */; };
-		C65BCCF326D2D87B001A7F19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
-		C65BCCF426D2D87E001A7F19 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
 		C65BCCF526D2D87E001A7F19 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
-		C65BCCF626D2D883001A7F19 /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182426BE79A90043107C /* ActivityResource.swift */; };
-		C65BCCF726D2D888001A7F19 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181B26BE77280043107C /* APIResource.swift */; };
-		C65BCCF826D2D888001A7F19 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181A26BE77280043107C /* APIRequest.swift */; };
-		C65BCCF926D2D888001A7F19 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182026BE77620043107C /* NetworkRequest.swift */; };
-		C65BCCFA26D2D888001A7F19 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C65BCCFB26D2D88B001A7F19 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
 		C65BCCFC26D2D89A001A7F19 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
+		C67DEEC926F3BF8C0010B233 /* BoredSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C67DEEC826F3BF8C0010B233 /* BoredSDK */; };
+		C67DEECB26F3BF910010B233 /* BoredSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C67DEECA26F3BF910010B233 /* BoredSDK */; };
+		C67DEECD26F3BF960010B233 /* BoredSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C67DEECC26F3BF960010B233 /* BoredSDK */; };
+		C67DEECF26F3BF9C0010B233 /* BoredSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C67DEECE26F3BF9C0010B233 /* BoredSDK */; };
+		C67DEED126F3BFA20010B233 /* BoredSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C67DEED026F3BFA20010B233 /* BoredSDK */; };
 		C6B2F1DC26E2910F004285BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DB26E2910F004285BB /* ContentView.swift */; };
 		C6B2F1DE26E2A1A4004285BB /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DD26E2A1A4004285BB /* FilterView.swift */; };
 		C6B2F1E026E2AC87004285BB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */; };
-		C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
-		C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6ED205326D294FC004B1402 /* Bored WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C6ED205226D294FC004B1402 /* Bored WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C6ED205826D294FE004B1402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ED205726D294FE004B1402 /* Assets.xcassets */; };
 		C6ED205F26D294FE004B1402 /* Bored WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C6ED205E26D294FE004B1402 /* Bored WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -91,14 +68,7 @@
 		C6ED206D26D294FF004B1402 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ED206C26D294FF004B1402 /* Preview Assets.xcassets */; };
 		C6ED207A26D2A29D004B1402 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182C26BE7B720043107C /* Extensions+String.swift */; };
 		C6ED207B26D2A2A7004B1402 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182E26BE7B720043107C /* ItemView.swift */; };
-		C6ED207C26D2A2FB004B1402 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181626BE76BA0043107C /* Constants.swift */; };
 		C6ED207D26D2A2FF004B1402 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182826BE7A650043107C /* ActivityStore.swift */; };
-		C6ED207E26D2A2FF004B1402 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181326BE76AB0043107C /* Activity.swift */; };
-		C6ED207F26D2A307004B1402 /* ActivityResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182426BE79A90043107C /* ActivityResource.swift */; };
-		C6ED208026D2A30C004B1402 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181A26BE77280043107C /* APIRequest.swift */; };
-		C6ED208126D2A30C004B1402 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182026BE77620043107C /* NetworkRequest.swift */; };
-		C6ED208226D2A30C004B1402 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E181B26BE77280043107C /* APIResource.swift */; };
-		C6ED208326D2A30C004B1402 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA846E26BEC2E600A126EE /* NetworkingError.swift */; };
 		C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E17F026BE76540043107C /* BoredApp.swift */; };
 		C6ED208626D2A435004B1402 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E182F26BE7B720043107C /* ActionView.swift */; };
 /* End PBXBuildFile section */
@@ -206,12 +176,6 @@
 		C64E17FF26BE76550043107C /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64E180126BE76550043107C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64E180226BE76550043107C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		C64E181326BE76AB0043107C /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		C64E181626BE76BA0043107C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C64E181A26BE77280043107C /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		C64E181B26BE77280043107C /* APIResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
-		C64E182026BE77620043107C /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		C64E182426BE79A90043107C /* ActivityResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityResource.swift; sourceTree = "<group>"; };
 		C64E182826BE7A650043107C /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
 		C64E182C26BE7B720043107C /* Extensions+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
 		C64E182E26BE7B720043107C /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -221,7 +185,6 @@
 		C6B2F1DB26E2910F004285BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6B2F1DD26E2A1A4004285BB /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		C6B2F1DF26E2AC87004285BB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
-		C6BA846E26BEC2E600A126EE /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		C6ED204F26D294FC004B1402 /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED205226D294FC004B1402 /* Bored WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bored WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED205726D294FE004B1402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67DEECD26F3BF960010B233 /* BoredSDK in Frameworks */,
 				C612DC2A26C2BAEE0078BDE1 /* SwiftUI.framework in Frameworks */,
 				C612DC2826C2BAEE0078BDE1 /* WidgetKit.framework in Frameworks */,
 			);
@@ -247,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67DEECF26F3BF9C0010B233 /* BoredSDK in Frameworks */,
 				C629C36D26D2D77A006AB59B /* SwiftUI.framework in Frameworks */,
 				C629C36C26D2D77A006AB59B /* WidgetKit.framework in Frameworks */,
 			);
@@ -256,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67DEEC926F3BF8C0010B233 /* BoredSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67DEECB26F3BF910010B233 /* BoredSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67DEED126F3BFA20010B233 /* BoredSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +309,6 @@
 		C64E17EA26BE76540043107C = {
 			isa = PBXGroup;
 			children = (
-				C64E181126BE76A10043107C /* Core */,
 				C64E17EF26BE76540043107C /* Shared */,
 				C64E17F926BE76550043107C /* iOS */,
 				C64E180026BE76550043107C /* macOS */,
@@ -359,6 +326,7 @@
 			children = (
 				C64E182B26BE7B720043107C /* Components */,
 				C64E182D26BE7B720043107C /* View */,
+				C67DEEC526F3BC200010B233 /* ViewModel */,
 				C6A19C4A26D2D6530028C926 /* Widget */,
 				C64E17F226BE76550043107C /* Assets.xcassets */,
 				C64E17F026BE76540043107C /* BoredApp.swift */,
@@ -400,45 +368,6 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		C64E181126BE76A10043107C /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				C64E181626BE76BA0043107C /* Constants.swift */,
-				C64E181226BE76A40043107C /* Model */,
-				C64E182326BE79920043107C /* Resources */,
-				C64E181926BE771D0043107C /* Services */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		C64E181226BE76A40043107C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C64E182826BE7A650043107C /* ActivityStore.swift */,
-				C64E181326BE76AB0043107C /* Activity.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C64E181926BE771D0043107C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C64E181A26BE77280043107C /* APIRequest.swift */,
-				C64E181B26BE77280043107C /* APIResource.swift */,
-				C64E182026BE77620043107C /* NetworkRequest.swift */,
-				C6BA846E26BEC2E600A126EE /* NetworkingError.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		C64E182326BE79920043107C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C64E182426BE79A90043107C /* ActivityResource.swift */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		C64E182B26BE7B720043107C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +385,14 @@
 				C64E182E26BE7B720043107C /* ItemView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C67DEEC526F3BC200010B233 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C64E182826BE7A650043107C /* ActivityStore.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C6A19C4A26D2D6530028C926 /* Widget */ = {
@@ -531,6 +468,9 @@
 			dependencies = (
 			);
 			name = "WidgetExtension(iOS)";
+			packageProductDependencies = (
+				C67DEECC26F3BF960010B233 /* BoredSDK */,
+			);
 			productName = WidgetExtension;
 			productReference = C612DC2526C2BAEE0078BDE1 /* WidgetExtension(iOS).appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -548,6 +488,9 @@
 			dependencies = (
 			);
 			name = "WidgetExtension(macOS)";
+			packageProductDependencies = (
+				C67DEECE26F3BF9C0010B233 /* BoredSDK */,
+			);
 			productName = WidgetExtension;
 			productReference = C629C36B26D2D77A006AB59B /* WidgetExtension(macOS).appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -567,6 +510,9 @@
 				C612DC3526C2BAF00078BDE1 /* PBXTargetDependency */,
 			);
 			name = "Bored (iOS)";
+			packageProductDependencies = (
+				C67DEEC826F3BF8C0010B233 /* BoredSDK */,
+			);
 			productName = "Bored (iOS)";
 			productReference = C64E17F726BE76550043107C /* Bored.app */;
 			productType = "com.apple.product-type.application";
@@ -586,6 +532,9 @@
 				C629C37926D2D77B006AB59B /* PBXTargetDependency */,
 			);
 			name = "Bored (macOS)";
+			packageProductDependencies = (
+				C67DEECA26F3BF910010B233 /* BoredSDK */,
+			);
 			productName = "Bored (macOS)";
 			productReference = C64E17FF26BE76550043107C /* Bored.app */;
 			productType = "com.apple.product-type.application";
@@ -637,6 +586,9 @@
 			dependencies = (
 			);
 			name = "Bored WatchKit Extension";
+			packageProductDependencies = (
+				C67DEED026F3BFA20010B233 /* BoredSDK */,
+			);
 			productName = "Bored WatchKit Extension";
 			productReference = C6ED205E26D294FE004B1402 /* Bored WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -648,7 +600,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					C612DC2426C2BAEE0078BDE1 = {
 						CreatedOnToolsVersion = 12.5;
@@ -682,6 +634,9 @@
 				Base,
 			);
 			mainGroup = C64E17EA26BE76540043107C;
+			packageReferences = (
+				C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */,
+			);
 			productRefGroup = C64E17F826BE76550043107C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -761,20 +716,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C612DC3F26C2BD540078BDE1 /* APIRequest.swift in Sources */,
 				C612DC2D26C2BAEE0078BDE1 /* Widget.swift in Sources */,
 				C612DC4626C2CFC90078BDE1 /* SmallWidget.swift in Sources */,
 				C648678226CB9D5F004F2C80 /* MediumWidget.swift in Sources */,
-				C612DC3C26C2BD4E0078BDE1 /* Activity.swift in Sources */,
-				C612DC4226C2BD540078BDE1 /* NetworkRequest.swift in Sources */,
 				C612DC4326C2BF470078BDE1 /* ItemView.swift in Sources */,
-				C612DC4126C2BD540078BDE1 /* NetworkingError.swift in Sources */,
 				C648678726CC32F2004F2C80 /* ActivityData.swift in Sources */,
 				C612DC3B26C2BD4C0078BDE1 /* ActivityStore.swift in Sources */,
 				C612DC4426C2BF580078BDE1 /* Extensions+String.swift in Sources */,
-				C612DC3D26C2BD510078BDE1 /* ActivityResource.swift in Sources */,
-				C612DC4026C2BD540078BDE1 /* APIResource.swift in Sources */,
-				C612DC3E26C2BD540078BDE1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,16 +734,9 @@
 				C65BCCF526D2D87E001A7F19 /* ActivityStore.swift in Sources */,
 				C65BCCEE26D2D82D001A7F19 /* MediumWidget.swift in Sources */,
 				C629C37F26D2D7A6006AB59B /* ActivityData.swift in Sources */,
-				C65BCCF426D2D87E001A7F19 /* Activity.swift in Sources */,
 				C65BCCEF26D2D82D001A7F19 /* SmallWidget.swift in Sources */,
-				C65BCCFA26D2D888001A7F19 /* NetworkingError.swift in Sources */,
 				C65BCCF026D2D82D001A7F19 /* Widget.swift in Sources */,
-				C65BCCF826D2D888001A7F19 /* APIRequest.swift in Sources */,
-				C65BCCF626D2D883001A7F19 /* ActivityResource.swift in Sources */,
-				C65BCCF726D2D888001A7F19 /* APIResource.swift in Sources */,
-				C65BCCF926D2D888001A7F19 /* NetworkRequest.swift in Sources */,
 				C65BCCFC26D2D89A001A7F19 /* ItemView.swift in Sources */,
-				C65BCCF326D2D87B001A7F19 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,23 +745,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64E183526BE7B720043107C /* ActionView.swift in Sources */,
-				C64E182126BE77620043107C /* NetworkRequest.swift in Sources */,
-				C64E181426BE76AB0043107C /* Activity.swift in Sources */,
 				C650657D26E4B71F00604E8C /* MoreView.swift in Sources */,
 				C6B2F1DE26E2A1A4004285BB /* FilterView.swift in Sources */,
 				C64E180326BE76550043107C /* BoredApp.swift in Sources */,
 				C60F786026DA29EE0007B1C4 /* ActivityView.swift in Sources */,
 				C64E183126BE7B720043107C /* Extensions+String.swift in Sources */,
-				C6BA846F26BEC2E600A126EE /* NetworkingError.swift in Sources */,
 				C64E183326BE7B720043107C /* ItemView.swift in Sources */,
 				C6B2F1E026E2AC87004285BB /* BottomSheetView.swift in Sources */,
-				C64E181C26BE77280043107C /* APIRequest.swift in Sources */,
-				C64E181E26BE77280043107C /* APIResource.swift in Sources */,
 				C60F785C26DA29650007B1C4 /* HeaderView.swift in Sources */,
-				C64E182526BE79A90043107C /* ActivityResource.swift in Sources */,
 				C609003926DA37D200970A2C /* IntroView.swift in Sources */,
 				C60F785A26DA28720007B1C4 /* ContentView.swift in Sources */,
-				C64E181726BE76BA0043107C /* Constants.swift in Sources */,
 				C64E182926BE7A650043107C /* ActivityStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -830,19 +764,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64E183626BE7B720043107C /* ActionView.swift in Sources */,
-				C64E182226BE77620043107C /* NetworkRequest.swift in Sources */,
 				C60F785526DA27860007B1C4 /* ContentView.swift in Sources */,
-				C64E181526BE76AB0043107C /* Activity.swift in Sources */,
 				C64E180426BE76550043107C /* BoredApp.swift in Sources */,
 				C64E183226BE7B720043107C /* Extensions+String.swift in Sources */,
 				C658675B26CEEF5C00C4E368 /* VisualEffectBlur-Mac.swift in Sources */,
-				C6BA847026BEC2E600A126EE /* NetworkingError.swift in Sources */,
 				C64E183426BE7B720043107C /* ItemView.swift in Sources */,
 				C60F786126DA29EE0007B1C4 /* ActivityView.swift in Sources */,
-				C64E181D26BE77280043107C /* APIRequest.swift in Sources */,
-				C64E181F26BE77280043107C /* APIResource.swift in Sources */,
-				C64E182626BE79A90043107C /* ActivityResource.swift in Sources */,
-				C64E181826BE76BA0043107C /* Constants.swift in Sources */,
 				C64E182A26BE7A650043107C /* ActivityStore.swift in Sources */,
 				C60F785D26DA29650007B1C4 /* HeaderView.swift in Sources */,
 			);
@@ -857,17 +784,10 @@
 				C6B2F1DC26E2910F004285BB /* ContentView.swift in Sources */,
 				C6ED208426D2A3E7004B1402 /* BoredApp.swift in Sources */,
 				C6ED207B26D2A2A7004B1402 /* ItemView.swift in Sources */,
-				C6ED208326D2A30C004B1402 /* NetworkingError.swift in Sources */,
 				C60F786226DA29EE0007B1C4 /* ActivityView.swift in Sources */,
 				C6ED206826D294FE004B1402 /* ComplicationController.swift in Sources */,
 				C6ED208626D2A435004B1402 /* ActionView.swift in Sources */,
-				C6ED207E26D2A2FF004B1402 /* Activity.swift in Sources */,
-				C6ED207F26D2A307004B1402 /* ActivityResource.swift in Sources */,
-				C6ED208126D2A30C004B1402 /* NetworkRequest.swift in Sources */,
 				C60F785E26DA29650007B1C4 /* HeaderView.swift in Sources */,
-				C6ED208026D2A30C004B1402 /* APIRequest.swift in Sources */,
-				C6ED208226D2A30C004B1402 /* APIResource.swift in Sources */,
-				C6ED207C26D2A2FB004B1402 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -952,6 +872,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Widget(macOS)/Widget.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -976,6 +897,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Widget(macOS)/Widget.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1163,6 +1085,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
@@ -1188,6 +1111,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
@@ -1401,6 +1325,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Rminsh/BoredSDK";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C67DEEC826F3BF8C0010B233 /* BoredSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */;
+			productName = BoredSDK;
+		};
+		C67DEECA26F3BF910010B233 /* BoredSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */;
+			productName = BoredSDK;
+		};
+		C67DEECC26F3BF960010B233 /* BoredSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */;
+			productName = BoredSDK;
+		};
+		C67DEECE26F3BF9C0010B233 /* BoredSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */;
+			productName = BoredSDK;
+		};
+		C67DEED026F3BFA20010B233 /* BoredSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67DEEC726F3BE240010B233 /* XCRemoteSwiftPackageReference "BoredSDK" */;
+			productName = BoredSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C64E17EB26BE76540043107C /* Project object */;
 }
